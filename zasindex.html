@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Официальный дилер Ресанта — подбор техники</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--text:#16202c;--muted:#5d6b7a;--brand:#c8102e;--accent:#ff8a1f;--line:#dfe5ec;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10161d;--card:#18212b;--text:#eef2f6;--muted:#9aa8b6;--brand:#ff6b5e;--line:#2a3643}}
+:root[data-theme="dark"]{--bg:#10161d;--card:#18212b;--text:#eef2f6;--muted:#9aa8b6;--brand:#ff6b5e;--line:#2a3643}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Rubik",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5;-webkit-text-size-adjust:100%}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(135deg,#7a0f1c,#b3141f 60%,#d9381e);color:#fff;padding:56px 0 48px;border-bottom:6px solid var(--accent)}
+header .badge{display:inline-block;background:var(--accent);color:#16202c;font-weight:700;font-size:13px;padding:4px 12px;border-radius:99px;margin-bottom:16px}
+h1{margin:0 0 12px;font-size:clamp(26px,5vw,40px);line-height:1.15;font-weight:700}
+header p{margin:0;max-width:560px;opacity:.92;font-size:18px}
+h2{font-size:24px;margin:40px 0 6px}
+.sub{color:var(--muted);margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.cat{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:20px 16px;text-align:left;cursor:pointer;font:inherit;color:inherit;transition:.15s}
+.cat:hover{border-color:var(--brand);transform:translateY(-2px)}
+.cat[aria-pressed="true"]{border-color:var(--brand);box-shadow:0 0 0 3px color-mix(in srgb,var(--brand) 25%,transparent)}
+.cat .ic{font-size:34px;display:block;margin-bottom:8px}
+.cat b{display:block;font-size:17px}
+.cat small{color:var(--muted)}
+#result{display:none;margin-top:22px;background:var(--card);border:2px solid var(--brand);border-radius:14px;padding:22px}
+#result.show{display:block}
+#result h3{margin:0 0 6px;font-size:20px}
+#result p{margin:0 0 16px;color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:#16202c;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:10px}
+.btn:hover{filter:brightness(.95)}
+.btn.sec{background:transparent;color:var(--brand);border:2px solid var(--brand);margin-left:8px}
+.contacts{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.contacts div b{display:block;color:var(--muted);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+footer{margin:40px 0;color:var(--muted);font-size:13px}
+.contacts a{color:var(--brand);font-weight:500;text-decoration:none}
+.why{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.why h3{margin:0 0 14px;font-size:20px}
+.why ul{list-style:none;margin:0 0 14px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.why li{display:flex;gap:10px;align-items:flex-start;font-weight:500}
+.why li svg{flex:none;width:22px;height:22px;color:var(--brand);margin-top:1px}
+.why p{margin:0 0 8px;color:var(--muted)}
+.contacts a.maxlink,.maxlink{display:inline-flex;align-items:center;gap:8px;color:var(--text);font-weight:500}
+.maxic{width:28px;height:28px;border-radius:8px;flex:none}
+@media (max-width:600px){
+.wrap{padding:0 16px}
+header{padding:36px 0 32px}
+header p{font-size:16px}
+h2{font-size:21px;margin-top:32px}
+.grid{grid-template-columns:1fr 1fr;gap:10px}
+.cat{padding:16px 12px;min-height:128px}
+.cat .ic{font-size:30px}
+.cat b{font-size:15px}
+.cat small{font-size:12.5px}
+#result{padding:18px}
+.btn{display:block;text-align:center;padding:14px 18px}
+.btn.sec{margin:10px 0 0}
+.contacts{grid-template-columns:1fr;padding:18px;gap:12px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<span class="badge">Официальный дилер Ресанта</span>
+<h1>Подберём технику Ресанта для дома, дачи и работы</h1>
+<p>Выберите, что вам нужно, — и перейдите в каталог производителя. Если нужна консультация, свяжитесь с нами.</p>
+</div></header>
+
+<main class="wrap">
+<h2>Что вы ищете?</h2>
+<p class="sub">Выберите категорию техники</p>
+<div class="grid" id="grid"></div>
+
+<div id="result" aria-live="polite">
+<h3 id="rTitle"></h3>
+<p>Полный ассортимент, характеристики и цены этой категории — в официальном интернет-магазине Ресанта в Улан-Удэ.</p>
+<a class="btn" id="rLink" href="#" target="_blank" rel="noopener">Перейти в каталог →</a>
+<a class="btn sec" href="#contacts">Нужна консультация</a>
+</div>
+
+<h2>Почему выбирают нас</h2>
+<div class="why">
+<h3>Нужен надёжный инструмент? Ресанта — отличный выбор!</h3>
+<ul>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Оригинал от официального поставщика</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Гарантия до 5 лет</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Сервис в нашем городе</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Доставка по городу и районам</li>
+</ul>
+<p>С нами вы не останетесь один на один с поломкой и не будете тратить время на поездки.</p>
+<p>Звоните по телефону или пишите нам в личные сообщения в Max.</p>
+</div>
+
+<h2 id="contacts">Контакты дилера</h2>
+<p class="sub">Подскажем с выбором, проверим наличие и оформим заказ. Доставка по городу и районам.</p>
+<div class="contacts">
+<div><b>Телефон</b><a href="tel:+79676218373">+7 (967) 621-83-73</a></div>
+<div><b>Адрес</b>г. Улан-Удэ</div>
+<div><b>Режим работы</b>Пн–Сб, 9:00–18:00</div>
+<div><b>Мессенджер</b><a class="maxlink" id="maxA"><svg class="maxic" viewBox="0 0 28 28" aria-hidden="true"><defs><linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2fb4ff"/><stop offset="1" stop-color="#7a3cff"/></linearGradient></defs><rect width="28" height="28" rx="8" fill="url(#mg)"/><path d="M14 6c-4.4 0-8 3.1-8 7.2 0 2.2 1 4.1 2.6 5.5L8 22l3.500-1.500c.8.2 1.600.3 2.500.3 4.400 0 8-3.100 8-7.200S18.400 6 14 6z" fill="#fff"/><circle cx="10.500" cy="13.200" r="1.400" fill="url(#mg)"/><circle cx="14" cy="13.200" r="1.400" fill="url(#mg)"/><circle cx="17.500" cy="13.200" r="1.400" fill="url(#mg)"/></svg>Пишите в Max</a></div>
+</div>
+<footer>Информация о товарах и ценах представлена на официальном сайте resanta.ru. Сайт дилера не является сайтом производителя.</footer>
+</main>
+
+<script>
+// Ссылки можно заменить на точные адреса разделов каталога на resanta.ru
+var BASE="https://resanta.ru/";
+var CATS=[
+{ic:"🔥",name:"Сварочные аппараты",hint:"Инверторы, полуавтоматы",url:"https://ulan-udeh.resanta.ru/category/svarochnoe-oborudovanie-resanta/svarochnye-apparaty/"},
+{ic:"🌿",name:"Садовая техника",hint:"Триммеры, пилы, газонокосилки",url:"https://ulan-udeh.resanta.ru/category/sadovaya-tekhnika-resanta/"},
+{ic:"🔧",name:"Инструменты",hint:"Дрели, шуруповёрты, шлифмашины",url:"https://ulan-udeh.resanta.ru/category/instrument-resanta/"},
+{ic:"❄️",name:"Климатическое оборудование",hint:"Обогреватели, тепловые пушки",url:"https://ulan-udeh.resanta.ru/category/teplovoe-oborudovanie/"},
+{ic:"⚡",name:"Генераторы",hint:"Бензиновые, дизельные, инверторные",url:"https://ulan-udeh.resanta.ru/category/generatory-resanta/"},
+{ic:"🔌",name:"Стабилизаторы напряжения",hint:"Для дома и дачи",url:"https://ulan-udeh.resanta.ru/category/stabilizatory-napryazheniya/"},
+{ic:"💧",name:"Насосы",hint:"Скважинные, дренажные, поверхностные",url:"https://ulan-udeh.resanta.ru/category/nasosnoe_oborudovanie_r/"},
+{ic:"📦",name:"Прочее",hint:"Аксессуары и другая техника",url:"https://ulan-udeh.resanta.ru/category/prochee-obudovanie/"}
+];
+var grid=document.getElementById("grid"),res=document.getElementById("result");
+CATS.forEach(function(c,i){
+var b=document.createElement("button");
+b.className="cat";b.type="button";b.setAttribute("aria-pressed","false");
+b.innerHTML='<span class="ic">'+c.ic+'</span><b>'+c.name+'</b><small>'+c.hint+'</small>';
+b.onclick=function(){
+document.querySelectorAll(".cat").forEach(function(x){x.setAttribute("aria-pressed","false")});
+b.setAttribute("aria-pressed","true");
+document.getElementById("rTitle").textContent="Вы выбрали: "+c.name;
+document.getElementById("rLink").href=c.url;
+res.classList.add("show");
+res.scrollIntoView({behavior:"smooth",block:"nearest"});
+};
+grid.appendChild(b);
+});
+// Вставьте сюда ссылку на ваш профиль или чат в Max — иконка станет кликабельной
+var MAX_URL="";
+if(MAX_URL){var m=document.getElementById("maxA");m.href=MAX_URL;m.target="_blank";m.rel="noopener"}
+</script>
+</body>
+</html>
